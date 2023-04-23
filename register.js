@@ -3,10 +3,10 @@ function register() {
   var password = document.getElementById("passwordData2").value;
   localStorage.setItem("localemail", email);
   localStorage.setItem("localpassword", password);
-  window.location.replace("https://accountdemo.netlify.app");
 }
 
 document.getElementById("registerButton").addEventListener("click", register);
+window.location.replace("https://accountdemo.netlify.app");
 
 
  

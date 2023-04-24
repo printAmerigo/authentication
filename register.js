@@ -6,7 +6,13 @@ function register() {
   window.location.replace("https://accountdemo.netlify.app");
 }
 
-document.getElementById("registerButton").addEventListener("click", register);
+document.addEventListener("click", function(e){
+  const targetId = e.target.id
+    
+  if(targetId == 'registerButton'){
+    register();
+  }
+});
 
 
 

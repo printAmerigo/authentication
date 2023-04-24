@@ -7,3 +7,5 @@ function register(e) {
   localStorage.setItem("localpassword", password);
   window.location.replace("https://accountdemo.netlify.app");
 }
+
+document.getElementById("registerButton").addEventListener("click", register);

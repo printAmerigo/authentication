@@ -13,6 +13,3 @@ function auth() {
   }
 }
 document.getElementById("loginButton").addEventListener("click", auth);
-
-
-

@@ -8,6 +8,8 @@ function auth() {
     var email = formEmail
     var password = formPassword.slice(0, -4) + '****';
     alert(`Welcome to the site, ${email}. We see your password is ${password}`)
+    localstorage.removeItem("localemail")
+    localstorage.removeItem("localpassword")
   } else {
     alert("Hmm... It seems this Info was not registered in this session. Please go to the registration page!")
   }

@@ -7,12 +7,7 @@ function auth() {
   if (formEmail == localemail && formPassword == localpassword) {
     var email = formEmail
     var password = formPassword.slice(0, -4) + '****';
-    alert(`Welcome to the site, ${email}. We see your password is ${password}`)
-    localstorage.removeItem("localemail")
-    localstorage.removeItem("localpassword")
-    
     window.location.replace("https://accountdemo.netlify.app/main");
-    
   } else {
     alert("Hmm... It seems this Info was not registered in this session. Please go to the registration page!")
   }

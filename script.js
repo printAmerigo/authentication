@@ -1,4 +1,6 @@
-function auth() {
+function auth(e) {
+  e.preventDefault();
+  e.stopPropagation();
   var formEmail = document.getElementById("emailData").value;
   var formPassword = document.getElementById("passwordData").value;
   var localemail = localStorage.getItem("localemail");
